@@ -43,27 +43,7 @@ const CartProvider = ({children}) => {
    return item.id === id;
   });
 
-  //if the item is already in the cart
-  // if (cartItem) {
-  //   const newCart = [...cart].map(item=>{
-  //     // console.log(item.id, id)
-  //     if(item.id === id){
-         
-  //       return {
-  //         ...item,
-  //           amount:parseInt(item.amount )+ 1
-  //        };
-  //     }
-        
-  //     else {
-  //       return item;
-  //     }
-      
-  //   });
-    
-  //   setCart(newCart);
-  // } else {
-  //   setCart([...cart, {...newItem, amount}]);}
+  
   
   if (cartItem) {
     const newCart = cart.map((item) => {
